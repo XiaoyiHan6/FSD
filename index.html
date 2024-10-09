@@ -260,7 +260,7 @@ Baseline models comparison across different datasets, where Fire represents the 
 Cross experimental results in <font color="#f08a5d">(a)</font>, where results represent the mean Average Precision (%) of fire and smoke. the table on the right, we train baseline models using the proposed miniMS-FSDB and then test with previous FSD dataset. <font color="#e84545">For example</font>, a mAP of 45.8 represents the result of the SSD model trains on our miniMS-FSDB and then test using the Fire-Smoke-Dataset. The table on the left, we train baseline models using previous FSD dataset and then test with miniMS-FSDB. <font color="#e84545">For example</font>, a mAP of 45.5 represents the result of the SSD model trains on Fire-Smoke-Dataset and the test using our miniMS-FSDB. We uniformly choose small input images for all baseline models to ensure consistency and comparability in experiments. <font color="#ff2e63">F-RCNN</font> means <font color="#ff2e63">Faster RCNN</font> and Ours means our method in <sup>2</sup>Fire and Smoke Detection with Burning Intensity Representation</strong>.
       <br>
       We train baselines on different FSD datasets and then test with the new testing set in <font color="#3490de">(b)</font>, where mAP represents the mean Average Precision (%) of fire and smoke. We use the input image of small size. <font color="#ff2e63">F-RCNN</font> means <font color="#ff2e63">Faster RCNN</font>,and Ours means our method in <sup>2</sup>Fire and Smoke Detection with Burning Intensity Representation</strong>.
-      <img src="static/images/Ablation_Study.png" alt="Ablation Study"/>
+      <img src="static/images/MS_FSDB_Ablation_Study.png" alt="Ablation Study"/>
       </h2>
     </div>
   </div>
@@ -431,15 +431,16 @@ Our <strong>Fire and Smoke Detection Method</strong>, which is called <font colo
 If you want to compare baseline models across different datasets, you can refer to <sup>1</sup>Benchmarking Multi-Scene Fire and Smoke Detection. 
 <br>
 And then, comparison between generic detection heads and <font color="#07689f">the Attention Transparency Detection Head (ATDH)</font> across the MS-FSDB is provided in <font color="#f08a5d">(a)</font>, where Fire, Smoke, and mAP are discussed in the subsection 'Setting and Details.' <font color="#e84545">“s”</font> represents the input image of small size, while <font color="#14ffec">“l”</font> represents the input image of large size.
-<br>
-Next, the attention mechanism algorithm is added to <font color="#15b7b9">FCOS</font> on the <font color="#b61aae">MS-FSDB</font>, where Fire, Smoke, and mAP are discussed in the subsection 'Setting and Details.' The input image of small size is used.
-        <img src="static/images/FSD_Ablation_Study.png" alt="Ablation Study"/>
+        <img src="static/images/atdh_baselines.png" alt="ATDH Baselines"/>
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <h2 class="subtitle has-text-centered">
-        <img src="static/images/MS_FSDB3.png" alt="Indoor Clutter Scenes Images" width="300" height="400"/>
+In <font color="#8c82fc">(1)</font>, the attention mechanism algorithm is added to <font color="#15b7b9">FCOS</font> on the <font color="#b61aae">MS-FSDB</font>, where Fire, Smoke, and mAP are discussed in the subsection 'Setting and Details.' The input image of small size is used.
+<br>
+In <font color="#9e579d">(2)</font>, the evidence supporting the efficacy of the <font color="#62d2a2">ATDH</font>, <font color="#f73859">(a)</font> original image, <font color="#ff9a3c">(b)</font> CAM visualization results of FCOS with SENet [13], <font color="#c86b85">(c)</font> CAM visualization results of FCOS with SKNet [22]. <font color="#e61c5d">(d)</font> CAM visualization results of <font color="#15b7b9">FCOS</font> with <font color="#62d2a2">ATDH</font>.
+        <img src="static/images/FSD_Ablation_Study.png" alt="Ablation Study"/>
         </h2>
         <br>
         <h2 class="subtitle has-text-centered">
