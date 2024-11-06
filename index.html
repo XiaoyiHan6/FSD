@@ -93,7 +93,7 @@
                         <a href="https://arxiv.org/abs/2410.16631" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+                          <i class="fa fa-download"></i>
                         </span>
                         <span>arxiv</span>
                       </a>
@@ -137,7 +137,7 @@
                   <a href="https://link.springer.com/chapter/10.1007/978-981-97-8795-1_14" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fa fa-download"></i>
+                    <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Springer</span>
                 </a>
@@ -424,7 +424,7 @@ isbn="978-981-97-8795-1"}
         <!-- Your image here -->
         <h2 class="subtitle has-text-centered">	
 Our <strong>Fire and Smoke Detection Method</strong>, which is called <font color="fa7f6f"> Attentive Fire Smoke Detection Model (a-FSDM)</font>. And it consists of three main components: <font color="8ecfc9">Feature Extraction</font>, <font color="82b0d2">Feature Fusion Grouping</font>, and <font color="#ff2e63">Attentive Transparency Detection Head (ATDH) of FSD task</font>. <font color="82b0d2">Feature Fusion Grouping</font> is used to fuse semantic and spatial information from various convolutional layers to prevent information loss. <font color="#ff2e63">The ATDH</font> is responsible for classification, regression, and centerness.
-        <img src="static/images/FSD_method_1.png" alt="Our Fire and Smoke Detection Method"/>
+        <img src="static/images/FSD_method.png" alt="Our Fire and Smoke Detection Method"/>
         </h2>
       </div>
       <div class="item">
@@ -433,7 +433,7 @@ Our <strong>Fire and Smoke Detection Method</strong>, which is called <font colo
 If you want to compare baseline models across different datasets, you can refer to <sup>1</sup>Benchmarking Multi-Scene Fire and Smoke Detection. 
 <br>
 And then, comparison between generic detection heads and <font color="#07689f">the Attention Transparency Detection Head (ATDH)</font> across the MS-FSDB is provided in <font color="#f08a5d">(a)</font>, where Fire, Smoke, and mAP are discussed in the subsection 'Setting and Details.' <font color="#e84545">“s”</font> represents the input image of small size, while <font color="#14ffec">“l”</font> represents the input image of large size.
-        <img src="static/images/atdh_baselines_1.png" alt="ATDH Baselines"/>
+        <img src="static/images/atdh_baselines.png" alt="ATDH Baselines"/>
         </h2>
       </div>
       <div class="item">
@@ -442,14 +442,14 @@ And then, comparison between generic detection heads and <font color="#07689f">t
 In <font color="#8c82fc">(1)</font>, the attention mechanism algorithm is added to <font color="#15b7b9">FCOS</font> on the <font color="#b61aae">MS-FSDB</font>, where Fire, Smoke, and mAP are discussed in the subsection 'Setting and Details.' The input image of small size is used.
 <br>
 In <font color="#9e579d">(2)</font>, the evidence supporting the efficacy of the <font color="#62d2a2">ATDH</font>, <font color="#f73859">(a)</font> original image, <font color="#ff9a3c">(b)</font> CAM visualization results of FCOS with SENet [13], <font color="#c86b85">(c)</font> CAM visualization results of FCOS with SKNet [22]. <font color="#e61c5d">(d)</font> CAM visualization results of <font color="#15b7b9">FCOS</font> with <font color="#62d2a2">ATDH</font>.
-        <img src="static/images/FSD_Ablation_Study_1.png" alt="Ablation Study"/>
+        <img src="static/images/FSD_Ablation_Study.png" alt="Ablation Study"/>
         </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
       <h2 class="subtitle has-text-centered">
 	      The performance of different models is shown in detail, covering seven detection models in terms of key metrics such as detection accuracy, mAP, performance (Gflops), and the number of parameters (M) for each category. Fire, Smoke, and mAP are discussed in the subsection 'Setting and Details.' We use small-sized input images from the miniMS-FSDB. In the models, <font color="#80d6ff">[17]</font> represents <font color="#80d6ff">YOLOv5</font>, <font color="#2eb872">[18]</font> stands for <font color="#2eb872">YOLOv8</font>, <font color="#ba52ed">[25]</font> denotes <font color="#ba52ed">SSD</font>, <font color="#46b7b9">[24]</font> signifies <font color="#46b7b9">RetinaNet</font>, <font color="#ff7c38">[33]</font> means <font color="#ff7c38">Faster R-CNN</font>, <font color="#1e56a0">[37]</font> refers to <font color="#1e56a0">FCOS</font>, and <font color="#f95959">'ours'</font> represents the proposed <font color="#f95959">a-FSDM model</font>. Additionally, <font color="#7098da">'s', 'x', 'n', 'l', and 'm'</font> represent different versions of the models.
-      <img src="static/images/The_performance_of_different_models_1.png" alt="The performance of different models"/>
+      <img src="static/images/The_performance_of_different_models.png" alt="The performance of different models"/>
       </h2>
     </div>
   </div>
